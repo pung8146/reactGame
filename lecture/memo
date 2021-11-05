@@ -1,0 +1,28 @@
+javascript
+
+onClick:click 이벤트는 사용자가 요소를 클릭할 때
+onChange:onchange 함수는 우리가 작성한 Javascript를 통해 변화가 일어났는지 탐지해줍니다.
+onSubmit:폼의 값을 전송하기 전에 특정 작업을 실행
+onLoad:
+onInput:사용자가 요소에 내용 입력할때 발생
+onFocus:포커스를 받은경우 이벤트 발생
+onBlur:포커스가 해지될때 이벤트발생
+
+암기 : state = 상태 => 상태는 바뀌는 부분(바뀔 수 있는 부분)
+
+setState 는 자동으로 바뀌는 것보다 수동으로 바뀌는곳에 사용해주어야한다
+
+예전함수값을 사용한다면
+ex)
+this.setState((prevState) => {
+    return {
+        value : prevState.value + 1;
+    };
+});
+
+ref는 돔에 직접 접근하고싶을때
+
+babel/core : 최신문법으로 알아서 바꿔줌
+babel/preset-env : 사용자 환경에 맟춰서 알아서 바꿔줌
+babel/preset-react : JSX 바꿔주는거
+babel-loader: 바벨 이랑 웹팩을 연결해주는거
