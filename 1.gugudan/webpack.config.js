@@ -1,5 +1,6 @@
 const path = require('path')
 const { webpack } = require('webpack')
+const RefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 module.exports = {
     mode: 'development',
@@ -22,15 +23,25 @@ module.exports = {
                     },
                 }], '@babel/preset-react', 
             ],
-                plugins: [],
+                plugins: [
+                    '@babel/plugin-proposal-class=properties',
+                    'react-refresh/babel'
+                ],
             }
         }],
     },
     plugins: [
+        new RefreshWebpackPlugin(),
         new webpack.LoaderOptionsPlugin({ debug: true}),
     ],
     output: {
-        filename:'app.js',
         path: path.join(__dirname, 'dist'),
+        filename:'app.js',
+        publicPath: '/dist',
+    },
+    devServer: {
+        devMiddelware: {publicPath: '/dist'},
+        statc: { directory : path.resolve(__dirname) },
+        hot : true,
     },
 }

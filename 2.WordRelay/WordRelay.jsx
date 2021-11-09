@@ -8,7 +8,7 @@ class WordRelay extends Component {
         result: '',
     };
 
-    onSubmit = (e) => {
+    onSubmitForm = (e) => {
         e.preventDefault();
         if (this.state.word[this.state.word.length - 1] === this.state.value[0]) {
             this.setState({
