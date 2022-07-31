@@ -80,3 +80,10 @@ onSubmit function(e) {
 # setState
 
 setState 는 컴포넌트 안에 무조건 있어야 합니다
+
+# react 에서 못쓰는 속성
+class => className
+for => htmlFor // label 에 for 속성
+
+# Webpack 하는이유
+node 는 서버 가아니라 Javascript 실행기입니다.
