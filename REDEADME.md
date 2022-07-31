@@ -87,3 +87,9 @@ for => htmlFor // label 에 for 속성
 
 # Webpack 하는이유
 node 는 서버 가아니라 Javascript 실행기입니다.
+
+# babel
+ @babel/core : 기본적인 babel 최신문법으로 바꿔줍니다.
+ @babel/preset-env : 사용자 환경에 맞게 알아서 변경해줍니다. 
+ @babel/preset-react : JSX으로 변경해줍니다.
+ babel-loader : 바벨 웹팩을 연결해줍니다.
