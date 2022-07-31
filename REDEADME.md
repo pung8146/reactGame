@@ -63,6 +63,9 @@ function LikeButton () => { // 함수형 컴포넌트 X
 
 # 함수를 따로 분리해서 사용할경우
 
+render 부분에서 함수 가 있을경우
+매번 새롭게 만들어짐으로 함수는 바깥으로 분리시키는게 좋습니다.
+
 ```javascript
 onSubmit = (e) => {
     화살표 함수에 따라 this가 바뀌게 되므로
@@ -73,3 +76,7 @@ onSubmit function(e) {
     this.의 주체가 바뀌게 되므로 render 부분에서는 사용해도 괜찮습니다.
 }
 ```
+
+# setState
+
+setState 는 컴포넌트 안에 무조건 있어야 합니다
