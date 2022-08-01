@@ -20,6 +20,10 @@ ReactDOM.createRoot(document.querySelector("#root")).render(<LikeButton / > ); /
 React에서 UI를 구성할 때 사용하는 문법으로 JavaScript를 확장한 문법입니다. 이 문법을 이용해서 우리는 React 엘리먼트를 만들 수 있습니다.
 html 에선 태그는 <button> 소문자로 시작해야 됩니다 .(XML 이 엄격하기때문입니다.)
 
+# Webpack 
+다수의 자바스크립트 파일을 하나의 파일로 합쳐주는 모든 번들 라이브러리입니다.
+node 는 서버 가아니라 Javascript 실행기입니다.
+
 # Babel
 
 Babel은 JSX를 브라우저가 이해할 수 있는 JavaScript로 컴파일합니다. 컴파일 후, JavaScript를 브라우저가 읽고 화면에 렌더링할 수 있습니다.
@@ -85,8 +89,6 @@ setState 는 컴포넌트 안에 무조건 있어야 합니다
 class => className
 for => htmlFor // label 에 for 속성
 
-# Webpack 하는이유
-node 는 서버 가아니라 Javascript 실행기입니다.
 
 # babel
  @babel/core : 기본적인 babel 최신문법으로 바꿔줍니다.
