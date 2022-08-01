@@ -1,6 +1,5 @@
 const path = require('path');
 
-
 module.exports = {
     name: 'wordrelay-setting',
     mode: 'development',// 실서비스 production
@@ -18,12 +17,18 @@ module.exports = {
             test: /\.jsx?/,
             loader : 'babel-loader',
             options: {
-                presets: ['@babel/preset-env', '@babel/preset-react'],
+                presets: [
+                    ['@babel/preset-env', {
+                    targets: {
+                        browsers: ['last 2 chrome versions'],
+                    },
+                }],
+                 '@babel/preset-react'
+                ],
                 plugins: ['@babel/plugin-proposal-class-properties'],
             },
         }],
     },
-
     output : {
         path: path.join(__dirname, 'dist'), // dist 는 현재폴더에서 만들어줍니다.
         filename: 'app.js',
