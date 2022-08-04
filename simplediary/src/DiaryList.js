@@ -15,7 +15,7 @@ const DiaryList = ({ diaryList }) => {
 )}
 
 DiaryList.defaultProps = {
-    diaryList :         [],
+    diaryList : [],
 }
 
 export default DiaryList;
