@@ -2,8 +2,8 @@ import { useState, useRef,useEffect, useMemo } from 'react';
 import './App.css';
 import DiaryList from './DiaryList';
 import DiaryEditor from './DirayEditor';
-import Lifecycle from './Lifecycle';
-import OptimizeTest from './OptimizeTest';
+// import Lifecycle from './Lifecycle';
+// import OptimizeTest from './OptimizeTest';
 
 // https://jsonplaceholder.typicode.com/comments
 
@@ -73,7 +73,7 @@ const {goodCount , badCount , goodRatio } = getDiaryAnalysis;
 
   return (
     <div className="App">
-      <OptimizeTest />
+      {/* <OptimizeTest /> */}
       {/* <Lifecycle /> */}
       <DiaryEditor onCreate={onCreate}/>
       <div>전체 일기 : {data.length}</div>
